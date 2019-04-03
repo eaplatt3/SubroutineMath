@@ -10,22 +10,25 @@
 use strict;
 use warnings;
 
+my $subNum;
+
+sub multi {
+	$subNum * 10;
+}
+
+sub divide {
+	$subNum / 2;
+}
+
 my $num;
 
 print "/n";
 print "Please Enter a Number: "; 
 
-$num = <STDIN>
+$num = <STDIN>;
+chomp $num;
 
-sub multi10 {
-	$num * 10;
-}
+multi($num);
+divide($num);
 
-sub divide2 {
-	$num / 2;
-}
-
-$num = multi10;
-$num = divide2;
-
-print $num; 
+print "$num"; 
