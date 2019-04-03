@@ -10,5 +10,17 @@
 use strict;
 use warnings;
 
-my $num1;
-my $num2; 
+my $num;
+
+print "/n";
+print "Please Enter a Number: "; 
+
+$num = <STDIN>
+
+sub multi10 {
+	$num = $num * 10;
+}
+
+sub divide2 {
+	$num = $num / 2;
+}
