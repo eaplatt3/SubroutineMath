@@ -18,9 +18,14 @@ print "Please Enter a Number: ";
 $num = <STDIN>
 
 sub multi10 {
-	$num = $num * 10;
+	$num * 10;
 }
 
 sub divide2 {
-	$num = $num / 2;
+	$num / 2;
 }
+
+$num = multi10;
+$num = divide2;
+
+print $num; 
